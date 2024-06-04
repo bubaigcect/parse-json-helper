@@ -1,7 +1,7 @@
 
-# json-response-helper
+# parse-json-helper
 
-`json-response-helper` is a simple Go package designed to facilitate the creation and handling of JSON responses in HTTP servers. It provides a function to standardize the structure and content of JSON responses, making it easier to ensure consistency across your HTTP endpoints.
+`parse-json-helper` is a simple Go package designed to facilitate the creation and handling of JSON responses in HTTP servers. It provides a function to standardize the structure and content of JSON responses, making it easier to ensure consistency across your HTTP endpoints.
 
 
 ## Features
@@ -14,15 +14,15 @@
 
 ## Installation
 
-To install `json-response-helper`, use `go get`:
+To install `parse-json-helper`, use `go get`:
 
 ```bash
-  go get github.com/bubaigcect/json-response-helper
+  go get github.com/bubaigcect/parse-json-helper
 ```
     
 ## Usage/Examples
 
-To use `json-response-helper` in your project, import the package and call `Response` from your HTTP handler functions.
+To use `parse-json-helper` in your project, import the package and call `Response` from your HTTP handler functions.
 
 ### Example
 
@@ -31,7 +31,7 @@ package main
 
 import (
 	"net/http"
-	parsejson "github.com/bubaigcect/json-response-helper"
+	parsejson "github.com/bubaigcect/parse-json-helper"
 )
 
 func handler(w http.ResponseWriter, r *http.Request) {
@@ -49,7 +49,7 @@ func main() {
 
 ## Response Structure
 
-The JSON response structure created by `Response` is defined by the `Response` struct from the `json-response-helper/common` package.
+The JSON response structure created by `Response` is defined by the `Response` struct from the `parse-json-helper/common` package.
 
 ### Response Fields
 
@@ -85,6 +85,7 @@ The JSON response structure created by `Response` is defined by the `Response` s
 ## 🚀 About Me
 
 I'm a seasoned full-stack developer with 9+ years of experience in building scalable web applications. My expertise includes frontend development with React and backend development using Golang, Node.js, Python, and PHP. I am dedicated to delivering top-notch solutions that fulfill client requirements and support business goals, leveraging my diverse skill set and unwavering commitment to quality.
+
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a pull request or open an issue.
